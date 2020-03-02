@@ -11,6 +11,7 @@ public class Valuta {
 	private double kupovni;
 	
 	public String getNaziv() {
+		
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
