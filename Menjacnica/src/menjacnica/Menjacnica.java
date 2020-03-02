@@ -26,7 +26,7 @@ public class Menjacnica implements menjacnicaInterfejs {
 	public void obrisiKurs(LinkedList<Valuta> valute, Date dan, Valuta v) {
 		for(Valuta v1 : valute) {
 
-			if(v1.getDatum() == v.getDatum())
+			if(v1.equals(v))
 
 				valute.remove(v1);
 		}
