@@ -10,6 +10,7 @@ public class Menjacnica implements menjacnicaInterfejs {
 
 	@Override
 	public void dodajKurs(LinkedList<Valuta> valute, Date dan, double kupovni, double prodajni, double srednji, String naziv, String skraceniNaziv) {
+		
 
 		Valuta v1 = new Valuta();
 		v1.setDatum(dan);
