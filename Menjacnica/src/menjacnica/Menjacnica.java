@@ -10,8 +10,7 @@ public class Menjacnica implements menjacnicaInterfejs {
 
 	@Override
 	public void dodajKurs(LinkedList<Valuta> valute, Date dan, double kupovni, double prodajni, double srednji, String naziv, String skraceniNaziv) {
-		if(kupovni < 0)
-			return;
+
 		Valuta v1 = new Valuta();
 		v1.setDatum(dan);
 		v1.setKupovni(kupovni);
@@ -26,14 +25,16 @@ public class Menjacnica implements menjacnicaInterfejs {
 	@Override
 	public void obrisiKurs(LinkedList<Valuta> valute, Date dan, Valuta v) {
 		for(Valuta v1 : valute) {
+
 			if(v1.getDatum() == v.getDatum())
+
 				valute.remove(v1);
 		}
 	}
 
 	@Override
 	public double kursValute(LinkedList<Valuta> valute, Date dan, Valuta v) {
-		//drugacija metoda
+
 		for(Valuta v1 : valute) {
 			if(v1.equals(v))
 				return v1.getSrednji();
