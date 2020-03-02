@@ -14,36 +14,48 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null)
+			return;
 		this.naziv = naziv;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv == null)
+			return;
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public Date getDatum() {
 		return datum;
 	}
 	public void setDatum(Date datum) {
+		if(datum == null)
+			return;
 		this.datum = datum;
 	}
 	public double getProdajni() {
 		return prodajni;
 	}
 	public void setProdajni(double prodajni) {
+		if(prodajni < 0)
+			return;
 		this.prodajni = prodajni;
 	}
 	public double getSrednji() {
 		return srednji;
 	}
 	public void setSrednji(double srednji) {
+		if(srednji < 0)
+			return;
 		this.srednji = srednji;
 	}
 	public double getKupovni() {
 		return kupovni;
 	}
 	public void setKupovni(double kupovni) {
+		if(kupovni < 0)
+			return;
 		this.kupovni = kupovni;
 	}
 	
